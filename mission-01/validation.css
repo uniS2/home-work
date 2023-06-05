@@ -1,19 +1,21 @@
-.validation-icon {
+.validationIcon {
+  /* 크기 조정 */
   box-sizing: border-box;
   display: block;
+  width: 15.625rem;
+  height: 2.3125rem;
 
-  width: 250px;
-  height: 37px;
+  padding: 0.5rem 0.5rem 0.5rem 2.25rem;
+  border-radius: 2.125rem;
+  margin: 0.75rem;
 
-  padding: 8px;
-  padding-left: 16px;
-  border-radius: 34px;
-  margin: 8px;
-
-  background: url(./imgages/validation_icon\ 2.png) no-repeat 16px 8px, #CCCCCC;
+  /* 배경 이미지 삽입 */
+  background: url(./images/validation_icon\ 2.png) no-repeat 1rem 0.625rem, #CCCCCC;
 }
 
+/* 하이터링크 처리 */
 .validation__link {
+  font-size: 0.875rem;
   text-decoration: none;
   color: inherit;
 }
