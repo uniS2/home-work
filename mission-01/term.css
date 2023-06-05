@@ -1,3 +1,65 @@
+/* 크기 조정 및 색깔 지정 */
+.term {
+  box-sizing: border-box;
+  width: 15.625rem;
+  height: 16.1875rem;
+
+  padding: 1rem;
+  border: 0.0625rem #A3A3A3 solid;
+  border-radius: 0.3125rem;
+  margin: 1rem;
+  background-color: #CCCCCC;
+}
+
+.heading {
+  margin-bottom: 1rem;
+}
+
+.onetermDl {
+  margin: 0 0 0.75rem 0;
+}
+
+.twotermDl {
+  margin: 0.75rem 0 0 0;
+}
+
+.onetermImg, .twotermImg {
+  width: 3.75rem;
+  height: 4.25rem;
+  margin: 0;  /* dd margin 값 제거 */
+}
+
+.onetermDd, .twotermDd {  
+  margin: 0;  /* dd margin 값 제거 */
+  margin-top: 0.25rem;
+}
+
+
+/* 글씨 설정 */
 .heading {
   font-weight: bold;
+  font-size: 0.9375rem;
+}
+
+.term {
+  font-size: 0.875rem;
+}
+
+.onetermDt, .twotermDt {
+  color: #3A6793;
+  font-weight: bold;
+}
+
+
+/* float 속성 적용 */
+.onetermImg {
+  float: left;
+  margin-right: 1rem;
+  height: 5.5rem;
+}
+
+.twotermImg {
+  float: right;
+  margin-left: 1rem;
+  height: 5.5rem;
 }
