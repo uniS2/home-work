@@ -36,13 +36,14 @@
 
 
 /* 글씨 설정 */
+.term {
+  font-size: 0.783rem;  /* 임의 설정 */
+  line-height: 150%;
+}
+
 .heading {
   font-weight: bold;
   font-size: 0.9375rem;
-}
-
-.term {
-  font-size: 0.875rem;
 }
 
 .onetermDt, .twotermDt {
@@ -52,8 +53,11 @@
 
 
 /* float 속성 적용 */
-.onetermDt {
-  float: right;
+.onetermDl::after,
+.twotermDl::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 .onetermImg {
@@ -62,20 +66,12 @@
   height: 5.5rem;
 }
 
-.onetermDd {
-  clear: right;
-}
-
-.twotermDt {
-  float: left;
-}
-
 .twotermImg {
   float: right;
   margin-left: 1rem;
   height: 5.5rem;
 }
 
-.twotermDd {
-  clear: left;
+.onetermDt, .twotermDt {
+  display: inline;
 }
