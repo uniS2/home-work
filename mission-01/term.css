@@ -72,6 +72,14 @@
   height: 5.5rem;
 }
 
-.onetermDt, .twotermDt {
+.onetermDt {
   display: inline;
+}
+
+.twotermDt {
+  float: left;
+}
+
+.twotermDd {
+  clear: left;
 }
