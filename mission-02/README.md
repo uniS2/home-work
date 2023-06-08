@@ -1,10 +1,10 @@
 # Web Cafe 로그인 스타일 - S2  
-  
+<>
 ## 로그인 마크업 & 스타일
 **HTML 특징**
 - 다양한 하위 요소를 포함할 수 있는 fieldset 요소를 적용하여 마크업
 - label, input, button, li 요소를 활용  
-  
+<>
 **CSS 특징**
   - 상단 로그인 영역 (*class="loginWrapper"*) : position(absolute) 속성 적용
   - 하단 로그인 링크 영역(*class="loginLink"*) : float 속성 적용  
