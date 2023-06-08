@@ -132,7 +132,7 @@
 .loginLink {
   border: 0;
   padding: 0;
-  margin: 0 0.5rem;
+  margin: 0 0.34375rem;  /* 5.5px */
   list-style: none;
   border-top: 1px solid #CCCCCC;
 }
@@ -145,11 +145,12 @@
 
 .login__join {
   float: left;
-  padding-left: 1.0625rem;  /* 17px */
+  padding-left: 1.0625rem;  /* 17px. 여백 설정 */
 }
 
 .login__search {
   float: right;
+  padding-right: 0.15625rem;  /* 여백 설정 */
 }
 
 .login__join a,
