@@ -1,0 +1,159 @@
+/* 웹카페 로그인 스타일 */
+
+/* 기본 설정 */
+/* 요소 숨김 */
+.hidden {
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/* 글씨 설정 */
+/* Pretendard 글씨체 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css");
+
+.loginForm, input, button {
+  font: inherit;
+  font-weight: 400;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.idInput, .pwInput {
+  font-size: 0.875rem; /* 14px */
+}
+
+.loginButton, .login__join, .login__search {
+  font-size: 0.8125rem;  /* 13px */
+}
+
+
+/* 모델 박스 및 속성 설정 */
+/* 전체 테두리 값 */
+.loginForm,
+.loginForm__group,
+.loginButton,
+.idInput__input,
+.pwInput__input {
+  border-radius: 0.3125rem; /* 5px */
+}
+
+/* 로그인 박스 영역 */
+.loginForm {
+  box-sizing: border-box;
+  width: 15.25rem;  /* 244px */
+  height: 10.0625rem; /* 161px */
+  padding: 0.75rem;
+  box-shadow: 0.3125rem 0.3125rem #AAAAAA;  /* 5px */
+  background: linear-gradient(90deg, #ED552F, #E8852E);
+}
+
+/* 로그인 제목 */
+.loginTitle {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.40625rem;  /* 22.5px */
+  color: #FFFF00;
+}
+
+/* 로그인 하위 박스 영역 */
+.loginForm__group {
+  box-sizing: border-box;
+  width: 13.75rem;  /* 220px */
+  height: 6.625rem; /* 106px */
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+
+/* 로그인 Wrapper 영역 */
+.loginWrapper {
+  padding: 0.5rem;
+}
+
+/* 아이디, 비밀번호 영역 */
+.idInput,
+.pwInput {
+  width: 9.125rem;  /* 146px */
+  height: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.idInput__label,
+.pwInput__label {
+  display: inline-block;
+  width: 3.5rem;  /* 56px **/
+  padding: 4px 0; /* 세로 정렬을 위한 임의 지정 */
+}
+
+.idInput__input,
+.pwInput__input {
+  appearance: none;
+  box-sizing: border-box;
+  width: 5.625rem;  /* 90px */
+  height: 1.5rem;
+  border: 1px solid #CCCCCC;
+  padding-left: 0.5rem;
+}
+
+/* 로그인 버튼 */
+.loginButton {
+  width: 3.125rem;  /* 50px */
+  height: 3.3125rem;  /* 53px */
+  border: none;
+  background: #ED552F;
+  color: #FFFFFF;
+}
+
+
+/* 로그인 input 및 버튼 배치 */
+.loginWrapper {
+  position: relative;
+}
+
+.idInput__input,
+.pwInput__input {
+  position: absolute;
+}
+
+.loginButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+
+/* 로그인 링크 및 배치 */
+.loginLink {
+  border: 0;
+  padding: 0;
+  margin: 0 0.5rem;
+  list-style: none;
+  border-top: 1px solid #CCCCCC;
+}
+
+.login__join,
+.login__search {
+  padding: 0.25rem 0;
+  margin: 0.25rem 0;
+}
+
+.login__join {
+  float: left;
+  padding-left: 1.0625rem;  /* 17px */
+}
+
+.login__search {
+  float: right;
+}
+
+.login__join a,
+.login__search a {
+  text-decoration: none;
+  color: inherit;
+}
