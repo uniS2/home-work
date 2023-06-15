@@ -31,7 +31,6 @@ a {
 
 /* 전체 */
 .favorite {
-  box-sizing: content-box;
   width: 10.375rem; /* 166px */
   height: 7.6875rem;  /* 123px */
   padding: 0.75rem;
@@ -96,7 +95,7 @@ a {
 /* 링크 */
 .favorite__link {
   display: inline-block;
-  width: 80%;
+  width: calc(100% - 1.6875rem); /* 27px >= 순위 + sprite 아이콘 */
 }
 
 /* sprite */
