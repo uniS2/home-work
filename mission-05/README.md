@@ -18,7 +18,7 @@
     1. 제목
     - h2 태그 사용
     - 강조할 부분은 span 태그를 사용한다.
-    ---
+
     2. 인기 사이트 목록
     - ol 태그 하위에 li 태그를 사용한다.
     - li 요소에 sprite와 spriteUp / spriteEqual / spritedown 클래스를 동시에 작성하여 해당하는 영역의 이미지가 보일 수 있도록 한다.
