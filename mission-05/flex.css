@@ -1,0 +1,112 @@
+/* 공통 설정 */
+
+/* 글씨 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css");
+
+.favorite {
+  font-family: "Pretendard";
+  line-height: 1.5;
+}
+
+.accentColor {
+  color: #ED552F;
+}
+
+/* 초기화 */
+h2, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 배치 */
+
+/* 전체 */
+.favorite {
+  width: 10.375rem; /* 166px */
+  height: 7.6875rem;  /* 123px */
+  padding: 0.75rem;
+  background: linear-gradient(#CCC, #EEE);
+  border: 1px solid #A3A3A3;
+  border-radius: 0.3125rem; /* 5px */
+  /* flex */
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.5rem;
+}
+
+/* 제목 */
+.favorite__title {
+  font-size: 0.9375rem;  /* 15px */
+}
+
+/* 목록 */
+.favorite__list {
+  font-size: 0.6875rem;  /* 11px */
+  order: 1;
+}
+
+/* 더보기 */
+.favorite__more {
+  font-size: 0.875rem;  /* 14px */
+  line-height: 150%;
+  padding-left: 1.25rem;
+  background: url(./images/Union.png) 0 40% /1rem 1rem no-repeat;
+  margin-left: auto;
+}
+
+/* 목록 */
+.favorite__list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+/* 순위 */
+.favorite__item {
+  counter-increment: rank;
+}
+
+.favorite__item::before {
+  content: counter(rank);
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  border-radius: 0.3125rem; /* 5px */
+  color: white;
+  background: #a3a3a3;
+}
+
+/* 링크 */
+.favorite__link {
+  display: inline-block;
+  width: calc(100% - 1.6875rem); /* 27px >= 순위 + sprite 아이콘 */
+}
+
+/* sprite */
+.sprite {
+  background: url(./images/rank.png) no-repeat right;
+  height: 1.0625rem;  /* 17px */
+}
+
+.spriteUp {
+  background-position-y: 0.1563rem; /* 2.5px */
+}
+
+.spriteEqual {
+  background-position-y: -1.125rem; /* -18px */
+}
+
+.spriteDown {
+  background-position-y: -2.625rem; /* -42px */
+}
